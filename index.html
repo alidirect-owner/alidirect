@@ -3,63 +3,103 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alidirect - Trouve les meilleurs produits AliExpress</title>
+  <title>AliDirect – Produits tendance AliExpress</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f5f5f5;
+      background: #f6f6f6;
       color: #333;
-      text-align: center;
     }
-
     header {
       background-color: #e52e2e;
-      padding: 2rem;
       color: white;
+      padding: 1.5rem;
+      text-align: center;
     }
-
+    h1 {
+      margin: 0;
+    }
     main {
       padding: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
     }
-
+    .product {
+      background: white;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .product img {
+      max-width: 100%;
+      border-radius: 8px;
+      height: 200px;
+      object-fit: cover;
+    }
+    .product h2 {
+      font-size: 1.1rem;
+      margin: 0.5rem 0;
+    }
+    .price {
+      font-weight: bold;
+      color: #e52e2e;
+      margin-bottom: 0.5rem;
+    }
+    .product a {
+      text-decoration: none;
+      color: white;
+      background-color: #ff4c4c;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      display: inline-block;
+      margin-top: 0.5rem;
+    }
     footer {
-      margin-top: 3rem;
+      text-align: center;
       padding: 1rem;
       font-size: 0.9rem;
-      color: #666;
-    }
-
-    .button {
-      display: inline-block;
-      margin-top: 2rem;
-      padding: 1rem 2rem;
-      background-color: #ff5e5e;
-      color: white;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
-
-    .button:hover {
-      background-color: #e04a4a;
+      color: #777;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Bienvenue sur Alidirect</h1>
-    <p>La passerelle rapide vers les meilleurs produits AliExpress</p>
+    <h1>🛒 AliDirect – Nos sélections AliExpress</h1>
+    <section>
+       <h2>Pourquoi AliDirect ?</h2>
+       <p>Parce qu’on sélectionne pour vous les meilleurs produits AliExpress 😎.</p>
+    </section>
+
   </header>
 
   <main>
-    <p>🚧 Le site est actuellement en construction.</p>
-    <a class="button" href="https://www.aliexpress.com/" target="_blank">Découvrir AliExpress</a>
+    <div class="product">
+      <img src="https://ae01.alicdn.com/kf/S6cc14d4d395e4b2094a24922ae7fd8afm.jpg" alt="Montre intelligente" />
+      <h2>Montre connectée fitness</h2>
+      <div class="price">€12,99</div>
+      <a href="https://s.click.aliexpress.com/e/_Dej1qTP" target="_blank">Voir sur AliExpress</a>
+    </div>
+
+    <div class="product">
+      <img src="https://ae01.alicdn.com/kf/S5f13d4c989be4be3a7e7e2d931389ae8b.jpg" alt="Écouteurs Bluetooth" />
+      <h2>Écouteurs Bluetooth TWS</h2>
+      <div class="price">€8,49</div>
+      <a href="https://s.click.aliexpress.com/e/_DCTKNVD" target="_blank">Voir sur AliExpress</a>
+    </div>
+
+    <div class="product">
+      <img src="https://ae01.alicdn.com/kf/S4ff6a2b7a2b348eaa2780ae1a3022dc9x.jpg" alt="Mini projecteur LED" />
+      <h2>Mini projecteur portable LED</h2>
+      <div class="price">€29,99</div>
+      <a href="https://s.click.aliexpress.com/e/_DdYby5f" target="_blank">Voir sur AliExpress</a>
+    </div>
   </main>
 
   <footer>
-    &copy; 2025 Alidirect. Tous droits réservés.
+    © 2025 AliDirect – Site d’affiliation AliExpress
   </footer>
 </body>
 </html>
